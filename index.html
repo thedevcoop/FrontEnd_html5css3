@@ -16,7 +16,7 @@
 </head>
 
 <body>
-  <header>
+  <header class="col span-4-of-4">
     <nav>
       <div class="row">
         <div class="logo-background">
@@ -32,11 +32,17 @@
         </ul>
       </div>
     </nav>
-    <div class="hero-text-box">
-      <h1>Oregon Adventurer,<br>All the great things of Portland!</h1>
-      <a class="btn btn-ghost" href="#">Great outdoors</a>
-      <a class="btn btn-ghost" href="#">Show me the city</a>
+
+    <div class="hero-wrapper">
+      <div class="hero-text-box">
+        <h1>Oregon Adventurer,<br>All the great things of Portland!</h1>
+        <div class="hero-button">
+          <a class="btn btn-ghost" href="#">Great outdoors</a>
+          <a class="btn btn-ghost" href="#">Show me the city</a>
+        </div>
+      </div>
     </div>
+
   </header>
 
   <section class="section-features">
@@ -70,7 +76,7 @@
   </section>
 
   <section class="section-places">
-    <ul class="places-showcase">
+    <ul class="places-showcase clearfix">
       <li>
         <figure class="place-photo">
           <img src="resources/img/hillsboro-park-faces-portland-oregon-places.jpg" alt="#">
@@ -86,6 +92,8 @@
           <img src="resources/img/pine-state-biscuit-portland-oregon-places.jpg" alt="#">
         </figure>
       </li>
+    </ul>
+    <ul class="places-showcase clearfix">
       <li>
         <figure class="place-photo">
           <img src="resources/img/st-honore-boulangerie-portland-oregon-places.jpg" alt="#">
@@ -104,6 +112,32 @@
     </ul>
   </section>
 
+  <section class="section-steps">
+    <div class="row">
+      <h2>How it works &mdash; Simple as 1, 2, 3</h2>
+    </div>
+    <div class="row">
+      <div class="col span-1-of-2 steps-box">
+        <img src="resources/img/iphone-template-roseG-crop.jpg" alt="phone place holder" class="app-screen">
+      </div>
+      <div class="col span-1-of-2 steps-box">
+        <div class="works-step">
+          <div>1</div>
+          <p>Download our app for Apple and Android!</p>
+        </div>
+        <div class="works-step steps-box">
+          <div>2</div>
+          <p>See new offers just for you!</p>
+        </div>
+        <div class="works-step steps-box">
+          <div>3</div>
+          <p>This could be your premium Ad space today!</p>
+        </div>
+        <a href="#" class="btn-app"><img src="resources/img/download-app.svg" alt=""></a>
+        <a href="#" class="btn-app"><img src="resources/img/download-app-android.png" alt=""></a>
+      </div>
+    </div>
+  </section>
 
   <script src="js/main.js"></script>
 </body>

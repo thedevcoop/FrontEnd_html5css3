@@ -17,8 +17,20 @@ html {
   color: #555;
   font-family: "Lato", "Arial", sans-serif;
   font-weight: 300;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-rendering: optimizeLegibility;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
 }
 
 /* ------------------------- */
@@ -172,6 +184,20 @@ header {
   height: 100vh;
 }
 
+/* .hero-wrapper {
+  margin: 0 auto;
+  margin-top: 200px;
+  padding: 15px;
+  width: 95%;
+  overflow: hidden;
+} */
+
+/* .hero-button {
+  margin: 0 auto;
+  width: 50%;
+  overflow: hidden;
+} */
+
 .hero-text-box {
   position: absolute;
   width: 60em;
@@ -269,4 +295,60 @@ svg.svg-inline--fa.fa-user-secret.fa-w-14.fa-3x {
   transition: transform 0.5s;
   opacity: 1;
   transform: scale(1.03);
+}
+
+/* ------------------------- */
+/* HOW IT WORKS */
+/* ------------------------- */
+
+.section-steps {
+  /* background-color: #f4f4f4; */
+  background-color: #ebebeb;
+}
+
+.steps-box:first-child {
+  text-align: right;
+  padding-right: 3%;
+}
+
+.steps-box:last-child {
+  padding-left: 3%;
+  margin-top: 70px;
+}
+
+.app-screen {
+  width: 80%;
+}
+
+.works-step {
+  margin-bottom: 50px;
+}
+
+.works-step p {
+  padding-top: 15px;
+  margin-right: 5px;
+}
+
+.works-step:last-of-type {
+  margin-bottom: 80px;
+}
+
+.works-step div {
+  color: #e67e22;
+  border: 2px solid #e67e22;
+  display: inline-block;
+  border-radius: 50%;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  padding: 10px;
+  float: left;
+  font-size: 1.5em;
+  margin-right: 25px;
+}
+
+.btn-app img {
+  height: 50px;
+  width: auto;
+  margin-right: 10px;
 }
