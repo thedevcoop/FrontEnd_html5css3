@@ -115,6 +115,14 @@ h2:after {
   text-align: center;
 }
 
+.icon-small {
+  /* display: inline-block; */
+  width: 30px;
+  /* text-align: center; */
+  color: #e67e22;
+  font-size: 120%;
+}
+
 svg.fa-sun {
   color: #ffc62a;
 }
@@ -181,6 +189,7 @@ header {
     url(img/web-portland-oregon-multnomah-falls.jpg);
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   height: 100vh;
 }
 
@@ -199,11 +208,19 @@ header {
 } */
 
 .hero-text-box {
-  position: absolute;
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 15%;
+  margin-left: 2%;
+  margin-right: 2%;
+  /* position: absolute;
   width: 60em;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /*half of its width/height up and to left*/
+  transform: translate(-50%, -50%); /*half of its width/height up and to left*/ */
 }
 
 .logo {
@@ -211,6 +228,7 @@ header {
   width: auto;
   float: left;
   margin-top: 1em;
+  margin-left: 1em;
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 50%;
 }
@@ -227,6 +245,7 @@ svg.svg-inline--fa.fa-user-secret.fa-w-14.fa-3x {
   float: right;
   list-style: none;
   margin-top: 2.5em;
+  margin-right: 2.5em;
 }
 
 .main-nav li {
@@ -351,4 +370,59 @@ svg.svg-inline--fa.fa-user-secret.fa-w-14.fa-3x {
   height: 50px;
   width: auto;
   margin-right: 10px;
+}
+
+/* ------------------ */
+/* CITIES */
+/* ------------------ */
+
+.box img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.city-feature {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.city-feature p {
+  margin-left: 10px;
+}
+
+/* ---------------- */
+/* SUGGESTIONS */
+/* ---------------- */
+
+.section-twitter-suggestions {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(img/portland-oregon-tree-canopy-reviews.jpg);
+  background-size: cover;
+  color: #fff;
+  background-attachment: fixed;
+}
+
+blockquote {
+  padding: 2%;
+  font-style: italic;
+  line-height: 145%;
+}
+
+blockquote:before {
+  display: flex;
+  content: "\201C";
+  font-size: 400%;
+}
+
+cite {
+  font-size: 90%;
+  margin-top: 15px;
+  display: block;
+}
+
+.suggestions {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 40px;
 }
