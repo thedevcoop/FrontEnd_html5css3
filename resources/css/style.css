@@ -4,7 +4,9 @@ Orange color: #e67e22
 */
 
 /* ------------------------- */
+
 /* BASIC SETUP */
+
 /* ------------------------- */
 
 * {
@@ -34,11 +36,14 @@ html {
 }
 
 /* ------------------------- */
+
 /* REUSABLE COMPONENTS */
+
 /* ------------------------- */
 
 .row {
-  max-width: 60em; /*1140px*/
+  max-width: 60em;
+  /*1140px*/
   margin: 0 auto;
 }
 
@@ -51,6 +56,7 @@ section {
 }
 
 /* ----- HEADINGS ----- */
+
 h1,
 h2,
 h3 {
@@ -90,6 +96,7 @@ h2:after {
 }
 
 /* ----- PARAGRAPHS ----- */
+
 .long-copy {
   line-height: 145%;
   width: 70%;
@@ -110,6 +117,7 @@ h2:after {
 }
 
 /* ----- ICONS ----- */
+
 .box {
   margin-top: 15px;
   text-align: center;
@@ -140,8 +148,10 @@ svg.fa-plane {
 }
 
 /* ----- BUTTON ----- */
+
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type="submit"] {
   display: inline-block;
   font-size: 1.3em;
   padding: 10px 30px;
@@ -159,7 +169,8 @@ svg.fa-plane {
 }
 
 .btn-ghost:link,
-.btn-ghost:visited {
+.btn-ghost:visited,
+input[type="submit"] {
   border: 1px solid #e67e22;
   margin: 15px 15px 0 0;
   color: #e67e22;
@@ -170,18 +181,24 @@ svg.fa-plane {
   background-color: #fff;
 }
 
-.btn-full:hover {
+.btn-full:hover,
+.btn-full:active {
   background-color: Transparent;
   color: #e67e22;
 }
 
-.btn-ghost:hover {
+.btn-ghost:hover,
+.btn-ghost:active,
+input[type="submit"]:hover,
+input[type="submit"]:active {
   background-color: #e67e22;
   color: #fff;
 }
 
 /* ------------------------- */
+
 /* HEADER */
+
 /* ------------------------- */
 
 header {
@@ -220,7 +237,7 @@ header {
   width: 60em;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /*half of its width/height up and to left*/ */
+  transform: translate(-50%, -50%); /*half of its width/height up and to left*/
 }
 
 .logo {
@@ -269,7 +286,9 @@ svg.svg-inline--fa.fa-user-secret.fa-w-14.fa-3x {
 }
 
 /* ------------------------- */
+
 /* FEATURES */
+
 /* ------------------------- */
 
 .section-features .long-copy {
@@ -277,7 +296,9 @@ svg.svg-inline--fa.fa-user-secret.fa-w-14.fa-3x {
 }
 
 /* ------------------------- */
+
 /* PLACES */
+
 /* ------------------------- */
 
 .section-places {
@@ -317,7 +338,9 @@ svg.svg-inline--fa.fa-user-secret.fa-w-14.fa-3x {
 }
 
 /* ------------------------- */
+
 /* HOW IT WORKS */
+
 /* ------------------------- */
 
 .section-steps {
@@ -373,7 +396,9 @@ svg.svg-inline--fa.fa-user-secret.fa-w-14.fa-3x {
 }
 
 /* ------------------ */
+
 /* CITIES */
+
 /* ------------------ */
 
 .box img {
@@ -393,11 +418,14 @@ svg.svg-inline--fa.fa-user-secret.fa-w-14.fa-3x {
 }
 
 /* ---------------- */
+
 /* SUGGESTIONS */
+
 /* ---------------- */
 
 .section-twitter-suggestions {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(img/portland-oregon-tree-canopy-reviews.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
+    url(img/portland-oregon-tree-canopy-reviews.jpg);
   background-size: cover;
   color: #fff;
   background-attachment: fixed;
@@ -425,4 +453,110 @@ cite {
   margin-left: 5px;
   margin-right: 5px;
   margin-top: 40px;
+}
+
+/* ------------------ */
+
+/* FORM */
+
+/* ------------------ */
+
+.contact-form {
+  width: 60%;
+  margin: 0 auto;
+  /* add line below (468) to make font larger */
+  font-size: 1.2em;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  /* add line below (482-484) to change text color,
+  add font style that we have throughout,
+  and change font weight in select drop down */
+  color: #555;
+  font-family: "Lato", "Arial", sans-serif;
+  font-weight: 300;
+}
+
+textarea {
+  height: 100px;
+}
+
+*:focus {
+  outline: none;
+}
+
+footer {
+  background-color: #333;
+}
+
+footer p {
+  color: #888;
+  display: flex;
+  justify-content: center;
+}
+
+footer ul:first-child {
+  margin-left: 20px;
+}
+
+.footer-nav {
+  list-style: none;
+  font-size: 90%;
+  /* float: left; */
+  display: flex;
+  justify-content: flex-start;
+}
+
+.social-links {
+  list-style: none;
+  /* float: right; */
+  display: flex;
+  justify-content: flex-end;
+  font-size: 140%;
+}
+
+.footer-nav li,
+.social-links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+footer .icon-small,
+footer .icon-small,
+footer .icon-small,
+footer .icon-small {
+  text-decoration: none;
+  border: 0;
+  color: #888;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active,
+footer .icon-small:hover,
+footer .icon-small:active {
+  text-decoration: none;
+  border: 0;
+  color: #e67e22;
+}
+
+.copyright {
+  font-size: 70%;
+}
+
+.copyright a {
+  text-decoration: none;
+  color: #e67e22;
+}
+
+.copyright a:hover {
+  color: #30fc49;
 }
